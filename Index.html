@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Webside</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Wellcome page -->
+    <div class="main_container center" id="homePage">
+        <div class="child_container center">
+            <div class="box">
+                <img src="./logo.png" alt="noimg" id="logo">
+                <h2 class="textcolor" id="userName"></h2>
+                <p id="usermessage" style="font-weight:bolder ;">Enter your name to continue the Quiz.</p>
+                <form id="form1">
+
+                    <input type="text" id="name">
+                    <button id="enter">Enter</button>
+                </form>
+                <p style="color:red">You'll have 10 seconds to answer each question</p>
+            </div>
+
+            <form class="center " id="category">
+                <h2 class="textcolor">Select Category</h2>
+                <p>
+                    <button id="category_a">Pipes and Cisterns</button>
+                    <button id="category_b"> Probability</button>
+
+                </p>
+                <p>
+                    <button id="category_c">Problems on Age</button>
+                    <button id="category_d">Profit and Loss</button>
+
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Qustion page -->
+
+
+    <div class="main_container center home" id="questionpage" >
+        <div class="child_container center"> 
+            <div class="full center">
+                <p>Catagory</p>
+                <p class="align"><span id="timer" class="textcolor circal left"></span>
+                    <span class="right" id="score"></span>
+                </p>
+            </div>
+            <div class="center questionbox">
+                <p class="textcolor circal" id="questionNumber"></p>
+                <p id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae nisi suscipit
+                    adipisci provident, non reprehenderit quam ad sint deserunt, repellat consequatur! ?</p>
+            </div>
+            <form id="form2"  >
+                <p>
+                    <button id="option_a" class="answer"  onclick="checker(this)">Hello</button>
+                    <button id="option_b" class="answer" onclick="checker(this)">Hello</button>
+
+                </p>
+                <p>
+                    <button id="option_c" class="answer" onclick="checker(this)">Hello</button>
+                    <button id=option_d class="answer" onclick="checker(this)">Hello</button>
+
+                </p>
+            </form>
+            <button id="next">Next Qustion</button>
+        </div>
+    </div>
+    <!-- Result page -->
+    <div class="main_container center" id="resultpage">
+        <div class="child_container center">
+            <h2>Quiz Result</h2>
+            <p class="full">
+                <span id="userName1"></span> your result is :
+            </p>
+            <p class="full">
+                Total time taken : <span></span>seconds
+            </p>
+            <p class="full">Total Qustion :
+                <span id="totalQuestion">10</span>
+            </p>
+            <p class="full">Attempt :
+                <span id="attempt"></span>
+            </p>
+            <p class="full">
+                Correct :<span id="scores"></span>
+            </p>
+            <p class="full">
+                Worng :<span id="worng"></span>
+            </p>
+            <p class="full">
+                Percentage :<span id="percentage"></span>
+            </p>
+            <p class="full">
+                <button id="reset" class="input">Start Again</button>
+                <button id="exit" class="input">Go To Home</button>
+            </p>
+        </div>
+    </div>
+ <script src="./my scrt.js"></script>
+ <!-- <script src="./script1.js"></script> -->
+</body>
+
+</html>
